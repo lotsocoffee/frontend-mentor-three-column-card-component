@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Nunito+Sans:wght@300&family=Roboto:wght@300;400;500;700&display=swap');
+:root{
+    --Bright-orange:     hsl(31, 77%, 52%); /*sedans*/
+    --Dark-cyan:         hsl(184, 100%, 22%); /*SUVs*/
+    --Very-dark-cyan:    hsl(179, 100%, 13%); /*luxurys*/
+    --Transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --Very-light-gray:   hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+    --darker:            #000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: var(--Transparent-white);
+}
+body{
+    background: var(--Very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+.container_main{
+    width: 325px;    
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 40px;
+    margin-top: 64px;
+    border-radius: 8px; 
+    overflow: hidden;
+}
+article{
+    width: 100%;
+    height: 440px;
+    padding: 48px; 
+}
+#card_container_sedans{
+    background-color: var(--Bright-orange);
+}
+#card_container_SUVs{
+    background-color: var(--Dark-cyan);
+}
+#card_container_luxury{
+    background-color: var(--Very-dark-cyan);
+}
+.img_upper{
+    margin-bottom: 36px;
+}
+h2{
+    color: var(--Very-light-gray);
+    font-family: 'Big Shoulders Display';
+    font-size: 2.4em;
+    margin-bottom: 25px;
+}
+p{
+   color: var(--Transparent-white);
+   line-height: 25px; 
+   margin-bottom: 25px;   
+}
+button{
+    width: 148px;
+    height: 46px;
+    border-radius: 45px;
+    border-style: none;
+    background-color: var(--Very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15PX;
+}
+.btn_sedans{
+    color: var(--Bright-orange);
+}
+.btn_SUVs{
+    color: var(--Dark-cyan);
+}
+.btn_luxury{
+    color: var(--Very-dark-cyan);
+}
+button:hover{
+    cursor: pointer;
+    border: 2px solid var(--Very-light-gray);
+}
+.btn_sedans:hover{
+    background-color: var(--Bright-orange);
+    color: var(--Very-light-gray);
+}
+.btn_SUVs:hover{
+    background-color: var(--Dark-cyan);
+    color: var(--Very-light-gray);
+}
+.btn_luxury:hover{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Very-light-gray);
+}
+.attribution{
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%);    
+}
+span{
+    color: var(--darker);
+}
+/*Desktop Viewport*/
+@media (min-width: 1440px){
+    .container_main{
+        width: 924px;
+        display: flex;
+        margin-top: 170px;
+    }
+    article{
+        height: 500px;
+    }
+    p{
+        margin-bottom: 80px;
+    }
+}
